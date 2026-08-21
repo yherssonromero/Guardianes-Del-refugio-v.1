@@ -23,7 +23,7 @@ RenderSettings:
   m_AmbientSkyColor: {r: 0.3207547, g: 0.3207547, b: 0.3207547, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
-  m_AmbientIntensity: 1
+  m_AmbientIntensity: 1.6
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.9056604, g: 0.9056604, b: 0.9056604, a: 1}
   m_SkyboxMaterial: {fileID: 2100000, guid: 505812acbea021c4191e3e75152991d2, type: 2}
@@ -35300,6 +35300,61 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5911119281837898526, guid: 9dd8dfb20ffbbee4b97b882fcb4b8d46, type: 3}
   m_PrefabInstance: {fileID: 663451362}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &476871634
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 476871636}
+  - component: {fileID: 476871635}
+  m_Layer: 5
+  m_Name: SkillsHUD
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &476871635
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 476871634}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 19102, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.dll::UnityEngine.UIElements.UIDocument
+  m_PanelSettings: {fileID: 11400000, guid: 28cb0887c1228fe4989fb6ff73c62dd4, type: 2}
+  m_ParentUI: {fileID: 0}
+  sourceAsset: {fileID: 9197481963319205126, guid: aeac981536225e54892ce971242adf41, type: 3}
+  m_SortingOrder: 0
+  m_Position: 0
+  m_WorldSpaceSizeMode: 1
+  m_WorldSpaceWidth: 1920
+  m_WorldSpaceHeight: 1080
+  m_PivotReferenceSize: 0
+  m_Pivot: 0
+  m_WorldSpaceCollider: {fileID: 0}
+--- !u!4 &476871636
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 476871634}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &478085855
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -36223,7 +36278,7 @@ MonoBehaviour:
         value:
           x: 0.11476771
           y: 0.24609455
-          z: -0.06531941
+          z: -0.065319404
           w: 0.96020794
     - Position:
         x: -141.53
@@ -65501,6 +65556,14 @@ PrefabInstance:
       propertyPath: textoLlaves
       value: 
       objectReference: {fileID: 537731431}
+    - target: {fileID: 3258759040858569056, guid: 8e405d70b27f9844d8c957725d1f1efa, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.000002468367
+      objectReference: {fileID: 0}
+    - target: {fileID: 3258759040858569056, guid: 8e405d70b27f9844d8c957725d1f1efa, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -60.236076
+      objectReference: {fileID: 0}
     - target: {fileID: 6268900521926905810, guid: 8e405d70b27f9844d8c957725d1f1efa, type: 3}
       propertyPath: playerRespawn
       value: 
@@ -65658,3 +65721,4 @@ SceneRoots:
   - {fileID: 663654139}
   - {fileID: 402411894}
   - {fileID: 407779550}
+  - {fileID: 476871636}

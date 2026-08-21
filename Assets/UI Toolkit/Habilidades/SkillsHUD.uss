@@ -1,0 +1,6 @@
+VisualElement {
+}
+
+.skill-button {
+    -unity-background-image-tint-color: rgb(0, 26, 226);
+}
