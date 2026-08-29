@@ -1,8 +1,14 @@
 <ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
     <Style src="project://database/Assets/UI%20Toolkit/Habilidades/SkillsHUD.uss?fileID=7433441132597879392&amp;guid=934eb7eafb2cb1946a6fa52dabd4d83d&amp;type=3#SkillsHUD"/>
     <ui:VisualElement name="skills-container" class="skills-container" style="flex-grow: 1;">
-        <ui:Button text="" name="skill-1" class="skill-button"/>
-        <ui:Button text="" name="skill-2" class="skill-button"/>
-        <ui:Button text="" name="skill-3" class="skill-button"/>
+        <ui:Button text="" name="skill-1" class="skill-button">
+            <ui:VisualElement name="skill-1-cooldown" class="cooldown-overlay" style="flex-grow: 1;"/>
+        </ui:Button>
+        <ui:Button text="" name="skill-2" class="skill-button">
+            <ui:VisualElement name="skill-2-cooldown" class="cooldown-overlay" style="flex-grow: 1;"/>
+        </ui:Button>
+        <ui:Button text="" name="skill-3" class="skill-button">
+            <ui:VisualElement name="skill-3-cooldown" class="cooldown-overlay" style="flex-grow: 1;"/>
+        </ui:Button>
     </ui:VisualElement>
 </ui:UXML>

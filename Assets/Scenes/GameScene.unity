@@ -40135,6 +40135,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a64354362bc0b041a13fa8ad06598aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillsHUDController
+  skill1CooldownDuration: 5
+  skill2CooldownDuration: 8
+  skill3CooldownDuration: 12
 --- !u!1001 &749979987
 PrefabInstance:
   m_ObjectHideFlags: 0
