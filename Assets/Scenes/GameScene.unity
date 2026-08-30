@@ -36221,10 +36221,10 @@ MonoBehaviour:
         z: 7.2501564
       Rotation:
         value:
-          x: 0.11476771
-          y: 0.24609455
-          z: -0.065319404
-          w: 0.96020794
+          x: 0.114767715
+          y: 0.24609458
+          z: -0.06531941
+          w: 0.960208
     - Position:
         x: -141.53
         y: 14.85
@@ -65655,6 +65655,8 @@ MonoBehaviour:
   animator: {fileID: 6431403872963005136}
   animatorTriggerName: Skill1
   kobuAttack: {fileID: 6431403872963005134}
+  particulaSkill1: {fileID: 5603006198383639307, guid: 8f6a9d2ab3c1e744d8162f7419631a61, type: 3}
+  puntoSkill1: {fileID: 2071553303}
 --- !u!1001 &6601649920857214023
 PrefabInstance:
   m_ObjectHideFlags: 0
