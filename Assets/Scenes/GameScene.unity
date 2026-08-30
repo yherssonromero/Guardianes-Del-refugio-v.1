@@ -31872,7 +31872,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 294158942}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.33447027, y: 0.02401064, z: -0.008524738, w: 0.94206184}
+  m_LocalRotation: {x: 0.3344703, y: 0.02401064, z: -0.0085247485, w: 0.94206184}
   m_LocalPosition: {x: -24.574806, y: -0.30556774, z: -58.57962}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -36223,7 +36223,7 @@ MonoBehaviour:
         value:
           x: 0.11476771
           y: 0.24609455
-          z: -0.06531941
+          z: -0.065319404
           w: 0.96020794
     - Position:
         x: -141.53
@@ -40138,6 +40138,7 @@ MonoBehaviour:
   skill1CooldownDuration: 5
   skill2CooldownDuration: 8
   skill3CooldownDuration: 12
+  skill1Action: {fileID: 6431403872963005137}
 --- !u!1001 &749979987
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -64483,6 +64484,73 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ce0c6845c31613145a5747169dd178f3, type: 3}
+--- !u!1 &2071553302
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2071553303}
+  - component: {fileID: 2071553305}
+  - component: {fileID: 2071553304}
+  m_Layer: 3
+  m_Name: HitboxSkill1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2071553303
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2071553302}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.27, y: 7.34, z: 9.79}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6431403872963005119}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2071553304
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2071553302}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddcc54e20f2385e41bcc2234369b6289, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GolpeHitbox
+  "da\xF1o": 100
+--- !u!135 &2071553305
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2071553302}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 0
+  serializedVersion: 3
+  m_Radius: 3.2504547
+  m_Center: {x: -9.906241e-16, y: 0.716343, z: -2.0341117}
 --- !u!4 &2071705239 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5911119281837898526, guid: 9dd8dfb20ffbbee4b97b882fcb4b8d46, type: 3}
@@ -65556,6 +65624,37 @@ MonoBehaviour:
   logicaKobu: {fileID: 0}
   kobuAttack: {fileID: 0}
   anim: {fileID: 0}
+--- !u!114 &6431403872963005134 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 546130473367270044, guid: 8e405d70b27f9844d8c957725d1f1efa, type: 3}
+  m_PrefabInstance: {fileID: 6601649920857214023}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1606913832}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07524ead0678ea145a28c7924e504616, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+--- !u!95 &6431403872963005136 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 2568275163245689519, guid: 8e405d70b27f9844d8c957725d1f1efa, type: 3}
+  m_PrefabInstance: {fileID: 6601649920857214023}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6431403872963005137
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1606913832}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aba310f54a73d345ac42475890f789c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Skill1Action
+  animator: {fileID: 6431403872963005136}
+  animatorTriggerName: Skill1
+  kobuAttack: {fileID: 6431403872963005134}
 --- !u!1001 &6601649920857214023
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -65630,11 +65729,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 7773246791983332298, guid: 8e405d70b27f9844d8c957725d1f1efa, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2071553303}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 7062568247302123628, guid: 8e405d70b27f9844d8c957725d1f1efa, type: 3}
       insertIndex: -1
       addedObject: {fileID: 6431403872963005128}
+    - targetCorrespondingSourceObject: {fileID: 7062568247302123628, guid: 8e405d70b27f9844d8c957725d1f1efa, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6431403872963005137}
   m_SourcePrefab: {fileID: 100100000, guid: 8e405d70b27f9844d8c957725d1f1efa, type: 3}
 --- !u!1001 &9115669889984671070
 PrefabInstance:

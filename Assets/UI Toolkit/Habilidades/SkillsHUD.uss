@@ -20,7 +20,7 @@ VisualElement {
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
     border-bottom-left-radius: 8px;
-    background-color: rgb(44, 77, 99);
+    background-color: rgb(201, 232, 253);
     border-left-color: rgb(51, 51, 51);
     border-right-color: rgb(51, 51, 51);
     border-top-color: rgb(51, 51, 51);

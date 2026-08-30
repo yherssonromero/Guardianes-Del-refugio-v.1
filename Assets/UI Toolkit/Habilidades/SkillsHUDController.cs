@@ -9,6 +9,9 @@ public class SkillsHUDController : MonoBehaviour
     [SerializeField] private float skill2CooldownDuration = 8f;
     [SerializeField] private float skill3CooldownDuration = 12f;
 
+    [Header("Script de la habilidad 1")]
+    [SerializeField] private Skill1Action skill1Action;
+
     private UIDocument document;
 
     private Button skill1;
@@ -41,6 +44,9 @@ public class SkillsHUDController : MonoBehaviour
         SetOverlayHeight(skill1Overlay, 0f);
         SetOverlayHeight(skill2Overlay, 0f);
         SetOverlayHeight(skill3Overlay, 0f);
+
+        if (skill1Action == null)
+            Debug.LogWarning("SkillsHUDController: falta asignar Skill1Action en el Inspector.");
     }
 
     private void Update()
@@ -127,7 +133,13 @@ public class SkillsHUDController : MonoBehaviour
     private void UseSkill(int index)
     {
         Debug.Log($"Habilidad {index} usada");
-        // Aquí después vamos a llamar al sistema real de habilidades
-        // (daño, efectos, etc.)
+
+        if (index == 1)
+        {
+            skill1Action?.Execute();
+        }
+
+        // Skill 2 y 3 todavía sin script propio - se agregan más adelante
+        // de la misma forma que skill1Action.
     }
 }
