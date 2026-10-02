@@ -12887,10 +12887,10 @@ MonoBehaviour:
         z: 7.2501564
       Rotation:
         value:
-          x: 0.114767715
-          y: 0.24609458
-          z: -0.06531941
-          w: 0.960208
+          x: 0.1147677
+          y: 0.24609454
+          z: -0.0653194
+          w: 0.9602079
     - Position:
         x: -141.53
         y: 14.85
@@ -20905,7 +20905,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SkillsHUDController
   skill1CooldownDuration: 8
   skill2CooldownDuration: 15
-  skill3CooldownDuration: 20
+  skill3CooldownDuration: 1
   skill1Action: {fileID: 6431403872963005137}
   skill2Action: {fileID: 6431403872963005147}
 --- !u!1 &749296584 stripped
